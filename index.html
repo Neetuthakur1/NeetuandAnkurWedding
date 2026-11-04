@@ -76,7 +76,7 @@ main{width:min(940px,calc(100% - 28px));margin:34px auto 45px;position:relative}
     <h1>Ankur <span>&</span> Neetu</h1>
     <p>With the blessings of our families,<br>we invite you to celebrate a beautiful union.</p>
     <button class="btn gold" id="enterBtn">Open wedding invitation <span>✧</span></button>
-    <p style="font: .65rem Poppins,sans-serif;margin:15px 0 0">Tap to enter · Music is optional</p>
+    <p style="font: .65rem Poppins,sans-serif;margin:15px 0 0">Tap to enter</p>
   </div>
 </div>
 
@@ -85,7 +85,7 @@ main{width:min(940px,calc(100% - 28px));margin:34px auto 45px;position:relative}
   <button class="control" id="petalsToggle" aria-label="Toggle flower petals">❀</button>
 </div>
 <div class="music-panel" id="musicPanel">
-  <div><strong>Aaj Sajeya</strong><small>Goldie Sohel · Add licensed MP3 to play</small></div>
+  <div><strong>🎶🎶</strong>/div>
   <button id="playBtn" aria-label="Play music">▶</button>
   <button id="muteBtn" aria-label="Mute music">♫</button>
 </div>
@@ -151,13 +151,13 @@ main{width:min(940px,calc(100% - 28px));margin:34px auto 45px;position:relative}
     <div class="venue-card">
       <div class="venue-icon">⌖</div>
       <div class="eyebrow">The celebration takes place at</div>
-      <h3>THE GRAND PLAZA</h3>
+      <h3>HOTEL GRAND PLAZA</h3>
       <p class="venue-address">Dhanaura Road, Opp. Teva Factory,<br>Gajraula, Uttar Pradesh, India</p>
       <div class="venue-actions">
         <a class="btn" id="directions" target="_blank" rel="noopener">↗ Get Driving Directions</a>
         <button class="btn light" id="copyAddress">▢ <span id="copyText">Copy Address</span></button>
       </div>
-      <iframe class="map" id="mapFrame" title="Google Maps location for The Grand Plaza, Gajraula" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      <iframe class="map" id="mapFrame" title="Google Maps location for HOTEL GRAND Plaza, Gajraula" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
   </section>
 
@@ -169,7 +169,6 @@ main{width:min(940px,calc(100% - 28px));margin:34px auto 45px;position:relative}
         <div class="field"><label for="guestMessage">Your blessings / message</label><textarea id="guestMessage" required maxlength="500" rows="3" placeholder="Wishing Ankur and Neetu a lifetime of love, good health and joyful togetherness..."></textarea></div>
         <button class="btn gold" type="submit">♡ Send Blessing</button>
       </form>
-      <p class="small-note">Guestbook note: messages are saved only in this browser on this device. They are not shared with the couple or other guests. Connect a database or Google Sheet to make a shared guestbook.</p>
       <div class="wishes-list" id="wishesList"></div>
     </div>
   </section>
@@ -178,7 +177,7 @@ main{width:min(940px,calc(100% - 28px));margin:34px auto 45px;position:relative}
     <div class="divider"><span></span>❀<span></span></div>
     <p class="thanks">With Warm Regards & Best Compliments</p>
     <h2>Ankur & Neetu</h2>
-    <p>Singh & Family · Relatives & Friends</p>
+    <p>Family · Relatives & Friends</p>
     <p>Your presence and blessings are the greatest gift we could ask for.</p>
     <div class="venue-actions">
       <button class="btn" id="shareBtn">☘ Share on WhatsApp</button>
@@ -212,8 +211,8 @@ main{width:min(940px,calc(100% - 28px));margin:34px auto 45px;position:relative}
    ========================================================= */
 const WEDDING = {
   countdownTarget: "2026-11-20T16:00:00+05:30", // Ghudchadhi start
-  venueName: "THE GRAND PLAZA",
-  venueAddress: "THE GRAND PLAZA, Dhanaura Road, Opp. Teva Factory, Gajraula, Uttar Pradesh, India",
+  venueName: "HOTEL GRAND PLAZA",
+  venueAddress: "HOTEL GRAND PLAZA, Dhanaura Road, Opp. Teva Factory, Gajraula, Uttar Pradesh, India",
   whatsappNumber: "" // Optional: add family number, e.g. 919876543210
 };
 
@@ -339,7 +338,7 @@ $("rsvpForm").addEventListener("submit",e=>{
   window.open(url,"_blank","noopener");$("rsvpModal").classList.remove("show");e.target.reset();
 });
 $("shareBtn").addEventListener("click",()=>{
-  const msg=encodeURIComponent("🌸 Wedding Invitation: Ankur weds Neetu 🌸\\n\\nवक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥\\n\\n20–21 November 2026\\nTHE GRAND PLAZA, Dhanaura Road, Opp. Teva Factory, Gajraula, Uttar Pradesh\\n\\nWe cordially invite you and your family to bless the newlyweds. ✨");
+  const msg=encodeURIComponent("🌸 Wedding Invitation: Ankur weds Neetu 🌸\\n\\nवक्रतुण्ड महाकाय सूर्यकोटि समप्रभ। निर्विघ्नं कुरु मे देव सर्वकार्येषु सर्वदा॥\\n\\n20–21 November 2026\\nHOTEL GRAND PLAZA, Dhanaura Road, Opp. Teva Factory, Gajraula, Uttar Pradesh\\n\\nWe cordially invite you and your family to bless the newlyweds. ✨");
   window.open(`https://wa.me/?text=${msg}`,"_blank","noopener");
 });
 
